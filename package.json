@@ -1,0 +1,24 @@
+{
+  "name": "proshop",
+  "version": "2.0.0",
+  "description": "eCommerce Trial using MERN",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Abhiram Gooty",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "dotenv": "^17.0.0",
+    "nodemon": "^3.1.10"
+  }
+}
